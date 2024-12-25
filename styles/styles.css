@@ -51,7 +51,9 @@ header {
 }
 
 .side-nav {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
 }
 
 #menu-btn {
@@ -854,18 +856,22 @@ section h2.left {
     #menu-btn {
         display: flex;
     }
-
+    
+    .side-nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+    
     .side-nav.open {
-        display: block;
+        height: 18rem;
     }
 
     .side-navlinks {
         display: flex;
         flex-direction: column;
         width: 100%;
-        position: absolute;
-        left: 0;
-        top: 100%;
         background-color: var(--neutral2);
     }
 
@@ -911,11 +917,7 @@ section h2.left {
 
 @media (width < 40rem){
 
-    header {
-        padding: 1rem;
-    }
-
-    section, footer {
+    header, section, footer {
         padding: 1rem;
     }
 
@@ -996,5 +998,4 @@ section h2.left {
     #offer .services .center {
         grid-row: auto;
     }
-
 }
