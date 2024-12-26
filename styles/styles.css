@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,6 +52,7 @@ header {
 }
 
 .side-nav {
+    position: absolute;
     height: 0;
     overflow: hidden;
     transition: height 0.5s ease-in-out;
@@ -858,7 +860,6 @@ section h2.left {
     }
     
     .side-nav {
-        position: absolute;
         left: 0;
         top: 100%;
         width: 100%;
