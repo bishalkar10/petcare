@@ -691,6 +691,18 @@ section h2.left {
     color: inherit;
 }
 
+.bubble {
+    animation: zoom 3s infinite;
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.7);
+    }
+}
 
 /* media break points */
 
