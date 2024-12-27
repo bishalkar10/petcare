@@ -327,6 +327,8 @@ section h2.left {
 #about-us .container .right img{
     position: absolute;
     left: 45%;
+    width: 45%;
+    aspect-ratio: 285/648;
     bottom: 0;
     transform: translateX(-50%);
 }
@@ -823,10 +825,6 @@ section h2.left {
 
     #about-us .container .right {
         width: 30rem;
-    }
-
-    #about-us .container .right img{
-        width: 45%;
     }
 
     #about-us .container .right .block:nth-child(1){
